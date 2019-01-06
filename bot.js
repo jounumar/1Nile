@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '3help') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (4)**')
@@ -328,8 +328,8 @@ client.on('message', message => {
     }
 });
 
-const adminprefix = "3";
-const devs = ['459133035397513228'];
+const adminprefix = "1";
+const devs = ['464281817839828992'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
